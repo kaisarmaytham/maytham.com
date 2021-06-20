@@ -1,2 +1,2 @@
 # maytham.com
-Personal website.
+Personal website for academic use.
