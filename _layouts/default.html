@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>        
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
+      
+        <div class="home__container section bd-grid">
+          <div class="home__data bd-grid">
+            <h1 class="home__title">Kaisar Maytham</h1>
+            <h3 class="home__profession">Medical Student<br>Research Year Student</h3>
+            <div>
+              <!-- Button to download your CV saved in the pdf folder. Available for mobile -->
+              <!--a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Dowload Cv</a-->
+            </div>
+          </div>   
+
+
+          <div class="home__address bd-grid">
+            <span class="home__information">
+              <i class='bx bx-map home__icon' ></i> Copenhagen
+            </span>
+            <span class="home__information">
+              <i class='bx bx-envelope home__icon' ></i> kaisar@sund.ku.dk
+            </span>
+            <span class="home__information">
+              <i class='bx bx-phone home__icon' ></i> +45 3139 2105
+            </span>
+          </div>
+        </div>
+
+        <div class="social__container bd-grid">
+          <a href="https://linkedin.com/in/kaisarmaytham/" target="_blank" class="social__link">
+              <i class='bx bxl-linkedin-square social__icon'></i>
+              @kaisarmaytham
+          </a>
+          <a href="https://twitter.com/kaisarmaytham/" target="_blank" class="social__link">
+              <i class='bx bxl-twitter social__icon'></i>
+              @kaisarmaytham
+          </a>
+          <a href="https://github.com/kaisarmaytham/" target="_blank" class="social__link">
+            <i class='bx bxl-github social__icon'></i>
+            @kaisarmaytham
+          </a>
+        </div>
+
+      </header>
+      <section>
+
+      {{ content }}
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+
+      </section>
+      <footer>
+        <!footer here>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+  </body>
+</html>
