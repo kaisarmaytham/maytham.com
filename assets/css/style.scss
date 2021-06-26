@@ -28,10 +28,9 @@ a {
   color: #1c427c;
   text-decoration: none;
   padding-bottom: 1px;
-  border-bottom: 1px solid;
 }
 a:hover {
-  color: #1c427c;
+  color: #175abe;
   border-bottom: none;
   font-weight: normal;
 }
@@ -66,10 +65,26 @@ code {
   gap: 5px;
 }
 
-.social__container {
-  padding-top: 30px;
+.social{
+  &__container{
+      gap: 0.25rem;
+      grid-template-columns: max-content;
+  }
+  &__link{
+      display: inline-flex;
+      align-items: center;
+      color: #1c427c;
+
+      &:hover{
+          color: #175abe;
+      }
+  }
+  &__icon{
+      font-size: 1rem;
+      margin-right: .25rem;
+  }
 }
 
-.social__link {
-  border-bottom: none;
+.credits:hover{
+  color: #175abe;;
 }
